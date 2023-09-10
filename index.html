@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&family=Qwigley&family=Source+Sans+3:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left player">
+            <h3>Player-1</h3>
+            <span id="span1">0</span>
+            <br>
+            <button class="btn disable" id="P1" onclick="btn1('p1')">Roll Now</button>
+        </div>
+        <div class="center">
+            <p>Let's Play Dice</p>
+            <h1 id="h1">Roll Now To Play</h1>
+            <div class="img">
+               <img src="img/one.svg" alt="one" id="die-1" height="100px">
+            </div>
+            <span id="wins"></span>
+            <br>
+            <button type="reset" class="reset" onclick="reset()">RESET</button>
+        </div>
+        <div class="right player">
+            <h3>Player-2</h3>
+            <span id="span2">0</span>
+            <br>
+            <button class="btn disable" id="P2" onclick="btn2('p2')">Roll Now</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
