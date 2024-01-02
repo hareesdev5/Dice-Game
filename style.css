@@ -1,63 +1,62 @@
-body{
-    position: relative;
-    border: 1px solid black;
-    margin-left: 300px;
-    width: 800px;
-    height: 600px;
-    font-family: 'poppins',sans-serif;  
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Lobster&display=swap');
+
+:root {
+  --red: red;
+  --pink: pink;
+  --green: #20B1A3;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'lobster', sans-serif;
 }
 .flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10%;
 }
 .player{
-    margin-top:18%;
+  display: grid;
+  padding-top: 10%;
+  gap: 10px;
 }
-h3{
-   font-size: 15px;
+.player h3{
+  font-size: 2em;
 }
-.btn{
-    padding: 10px 20px 10px 20px;
-    color: white;
-    background-color: green;
-    margin-top: 20%;
-    margin-left: -12px;
+.player span{
+  font-size: 3.5em;
+}
+.player button , .center button{
+  padding: 10px 40px ;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: .8em;
+  font-weight: 800;
+}
+.center button{
+  margin-top: 10px;
+}
+.player button:active , .center button:active{
+  outline: 0;
+  box-shadow:
+    1px 0   0 var(--right-color),
+    1px 1px 0 var(--bottom-color);
+  
+  transform: translate(2px, 2px);
+}
+.center button{
+  background-color: red;
 }
 .center{
-    margin-top:5%;
-    text-align: center;
-    width: 300px;
+  display: grid;
+  gap: 10%;
 }
-p{
-    font-size: 10px;
-    color: green;
-}
-h1{
-  font-size: 20px;
-  font-family: 900;
-}
-.img{
-    margin-top: 30%;
-    margin-bottom: 10%;
-}
-span{
-    font-size: 40px;
-    margin-left: 20%;
-}
-.reset{
-    margin-top: 70px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 8px;
-    background-color: red;
-    font-size: 10px;
-    font-weight: 800;
-}
-.disabled{
-    background-color: grey;
-}
-#wins{
-    font-size: 20px;
-    margin-left: -5px
-
+.center p{
+  color: green;
 }
