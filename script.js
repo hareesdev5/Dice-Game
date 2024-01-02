@@ -67,8 +67,3 @@ function reset(){
     location.reload();
 }
 
-function darkmode(){
-  let element =document.getElementsByTagName('button')
-  element.classList.add('active')
-}
-
